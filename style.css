@@ -131,6 +131,19 @@ input[type=text]{
     align-items: center;
     padding: 20px 0;
 }
+
+.final-result{
+    border: solid 1px #3c3836;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 16px;
+}
+
+#finalResult{
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    background-color: #3c3836;
+}
 /* OUTPUT SECTION */
 
 /* DOCS SECTION */
@@ -167,5 +180,9 @@ hr{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #finalResult{
+        font-size: 0.85rem;
     }
 }
