@@ -21,8 +21,7 @@ This project aims to make it easier for students and developers to learn how the
 1. Clone this repository:
 ```bash
 git clone [https://github.com/username/articode.git](https://github.com/username/articode.git)
-```
-or access it via the following link: https://dhimasekaputraa.github.io/articode/
+``` https://dhimasekaputraa.github.io/articode/
 2. Open the `index.html` file in your preferred browser.
 3. Enter text in the input field.
 4. Click the **Encode** button to see the calculation process and the final result.
