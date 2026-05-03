@@ -7,15 +7,83 @@ body{
     margin: 0;
 }
 
-nav{
+/* NAVBAR */
+
+.topnav{
     background-color: #3c3836;
+    overflow: hidden;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.topnav a{
+    float: left;
+    text-align: center;
     padding: 16px 20px;
-    margin: 0px;
+    font-weight:bold;
+    text-decoration: none;
+    color:#fbf1c7
+}
+
+.topnav a:hover{
+    color: #fabd2f;
+}
+
+.topnav-right{
+    float:right;
+}
+
+/* NAVBAR */
+
+/* HERO SECTION */
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.sub-title{
+    margin-top: -20px;
+}
+
+/* HERO SECTION */
+
+/* INPUT SECTION */
+.input-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    gap: 4px;
+}
+
+input[type=text]{
+    background-color: #3c3836;
+    border-radius: 4px;
+    border-style: none;
+    width: 500px;
+    height: 30px;
+    color: #fbf1c7;
+    text-indent: 8px;
+}
+
+.action-button{
+    background-color:#fbf1c7;
+    height: 30px;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: bold;
+    color: #1d2021;
+}
+
+/* INPUT SECTION */
+
+/* OUTPUT SECTION */
+.output-section{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
