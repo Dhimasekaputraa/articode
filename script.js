@@ -1,6 +1,10 @@
 function solveArithmetic(){
-    const text = document.getElementById('userInput').value;
-    if (!text) return;
+    const text = document.getElementById('userInput').value.toLowerCase();
+    const outputDiv = document.getElementById('outputSection')
+    if (!text) {
+        outputDiv.style.display = "none";
+        return
+    };
 
     // Count the character frequency
     let freq = {};
@@ -26,6 +30,7 @@ function solveArithmetic(){
     })
     displayTable(dictionary);
     startEncoding(text, dictionary);
+    outputDiv.style.display = "flex";
 }
 
 function startEncoding(text, dictionary){
