@@ -9,9 +9,9 @@
 <body>
     <!-- Header -->
     <nav class="topnav">
-        <a>ArtiCode</a>
+        <a class="page-title"></a>
             <div class="topnav-right">
-                <a href="#">Manual</a>
+                <a href="#docs-section">Docs</a>
                 <a href="https://github.com/Dhimasekaputraa/articode.git" target="_blank">Github</a>
             </div> 
     </nav>
@@ -40,6 +40,54 @@
         <div id="finalResult"></div>
 
     </div>
+
+    <section class="docs-section" id="docs-section">
+        <h2>Apa itu Arithmetic Coding?</h2>
+        <p>
+            <strong>Arithmetic Coding</strong> adalah salah satu teknik kompresi data lossless yang sangat efisien. 
+            Arithmetic Coding mengubah satu blok data (misalnya satu kata atau kalimat) menjadi sebuah <strong>angka pecahan (desimal)</strong> di antara rentang 0.0 sampai 1.0.
+        </p>
+
+        <h2>Bagaimana Cara Kerjanya?</h2>
+        <p>
+            Algoritma ini bekerja dengan cara membagi ruang probabilitas. Bayangkan sebuah garis bilangan dari 0 hingga 1. 
+            Setiap karakter unik diberikan porsi dari garis tersebut berdasarkan frekuensi kemunculannya. 
+            Semakin sering suatu karakter muncul, semakin besar porsi rentang yang ia miliki.
+        </p>
+
+        <h2>Langkah-langkah Pengerjaan (Algoritma):</h2>
+        <ol>
+            <li>
+                <strong>Analisis Karakter:</strong> Hitung frekuensi kemunculan setiap karakter unik dari input dan tentukan 
+                probabilitasnya (<code>Jumlah Karakter / Total Panjang Teks</code>).
+            </li>
+            <li>
+                <strong>Inisialisasi Interval:</strong> Urutkan karakter (misal sesuai urutan kemunculan) 
+                dan tentukan batas bawah (Low) serta batas atas (High) awal untuk setiap karakter dalam rentang 0 sampai 1.
+            </li>
+            <li>
+                <strong>Proses Iterasi (Encoding):</strong>
+                <ul>
+                    <li>Mulai dengan rentang global <code>[0.0, 1.0)</code>.</li>
+                    <li>Untuk setiap karakter dalam teks, "persempit" rentang global ke dalam rentang karakter tersebut.</li>
+                    <li>Gunakan rumus: 
+                        <br><code>Range = High - Low</code>
+                        <br><code>New_High = Low + (Range * Character_High)</code>
+                        <br><code>New_Low = Low + (Range * Character_Low)</code>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Output Akhir:</strong> Hasil akhir adalah angka apapun yang berada di dalam rentang final setelah semua karakter diproses.
+            </li>
+        </ol>
+
+        <blockquote>
+            <em>Catatan: Semakin panjang teks yang dikompres, rentang yang dihasilkan akan semakin sempit dan membutuhkan presisi angka desimal yang lebih tinggi.</em>
+        </blockquote>
+    </section>
+    <hr>
+
     <script src="script.js"></script>
 </body>
 </html>
