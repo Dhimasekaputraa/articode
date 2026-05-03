@@ -12,9 +12,9 @@ This project aims to make it easier for students and developers to learn how the
 
 ## Technologies Used
 
-* **HTML5**: Page structure and educational content.
-* **CSS3**: Responsive styling and keyframe animations for titles.
-* **JavaScript**: The core logic of the Arithmetic Coding algorithm and dynamic DOM manipulation.
+* **HTML5**: Page stucture.
+* **CSS3**: Styling the page.
+* **JavaScript**: The core logic of the Arithmetic Coding algorithm.
 
 ## Usage
 
