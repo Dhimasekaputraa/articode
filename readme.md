@@ -16,7 +16,7 @@ This project aims to make it easier for students and developers to learn how the
 * **CSS3**: Styling the page.
 * **JavaScript**: The core logic of the Arithmetic Coding algorithm.
 
-. Clone this repository:
+1. Clone this repository:
 
 ```bash
 
