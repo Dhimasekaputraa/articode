@@ -8,31 +8,38 @@
 </head>
 <body>
     <!-- Header -->
-    <nav>
-        <ul>
-            <li><a>ArtiCode</a></li>
-            <li><a>Github</a></li>
-        </ul>
+    <nav class="topnav">
+        <a>ArtiCode</a>
+            <div class="topnav-right">
+                <a href="#">Manual</a>
+                <a href="https://github.com/Dhimasekaputraa/articode.git" target="_blank">Github</a>
+            </div> 
     </nav>
+
     <!-- Title -->
-    <h1>Arithmetic Code Encoder</h1>
-
+    <div class="hero-section">
+        <h1>Arithmetic Coding</h1>
+        <p class="sub-title">Convert string into interval</p>
+    </div>
+    
     <!-- Input -->
-    <input type="text" id="userInput" placeholder="Insert your text here">
-    <button onclick="solveArithmetic()">Encode</button>
-
-    <hr>
+    <div class="input-section">
+        <input type="text" id="userInput" placeholder="Insert your text here...">
+        <button class="action-button" onclick="solveArithmetic()">Encode</button>
+    </div>
 
     <!-- Output -->
-    <h3>Probability Table</h3>
-    <div id="probabilityTable"></div>
+    <div class="output-section" id="outputSection">
+        <h3>Probability Table</h3>
+        <div id="probabilityTable"></div>
 
-    <h3>Iteration Process</h3>
-    <div id="iterationLog"></div>
+        <h3>Iteration Process</h3>
+        <div id="iterationLog"></div>
 
-    <h3>Final Result</h3>
-    <div id="finalResult"></div>
+        <h3>Final Result</h3>
+        <div id="finalResult"></div>
 
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
